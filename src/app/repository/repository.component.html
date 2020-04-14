@@ -9,7 +9,7 @@
     {{project.language}}
   </h2>
   <h2>Description:
-    {{project.description | slice:0:49}}
+    {{project.description | truncate:[50]}}
   </h2>
   <p>
     stargazers_count:{{project.stargazers_count}}

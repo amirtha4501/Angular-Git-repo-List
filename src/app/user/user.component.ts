@@ -68,11 +68,8 @@ export class UserComponent implements OnInit {
     console.log(this.det.name, " parent comp ts");
     this.githubService.users(this.det.name).subscribe(
       (projects) => this.projects = projects,
-      (error) =>
-      { if (error.status=='404') 
-        {
-          alert('User not found');
-        }      
+      (error) => { 
+        if (error.status=='404') { alert('User not found') }      
       }
       );
   }

@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { ProcessHttpMsgService } from './process-httpmsg.service';
 
 const usersEndpoint = 'https://api.github.com/users/';
 const orgsEndpoint = 'https://api.github.com/orgs/';
@@ -19,7 +18,6 @@ const httpOptions = {
 export class GithubService {
 
   constructor(
-    private processHttpMsgService: ProcessHttpMsgService,
     private http: HttpClient
   ) { }
 
