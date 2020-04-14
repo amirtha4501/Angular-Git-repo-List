@@ -4,13 +4,28 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { OrganizationComponent } from './organization/organization.component';
+import { UserComponent } from './user/user.component';
+import { RepositoryComponent } from './repository/repository.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrganizationComponent,
+    UserComponent,
+    RepositoryComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

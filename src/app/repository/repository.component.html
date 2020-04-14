@@ -1,0 +1,23 @@
+<div class="card" [ngStyle]="{'background-color':project.fork? 'yellow' : 'white' }">
+  <h1>Project Name:
+    <a href="{{project.html_url}}" target="_blank">{{project.name}}</a>
+  </h1>
+  <h2>Size:
+    {{project.size}}
+  </h2>
+  <h2>Language:
+    {{project.language}}
+  </h2>
+  <h2>Description:
+    {{project.description}}
+  </h2>
+  <p>
+    stargazers_count:{{project.stargazers_count}}
+  </p>
+  <p>
+    watchers_count:{{project.watchers_count}}
+  </p>
+  <p>
+    forks_count:{{project.forks_count}}
+  </p>
+</div>
