@@ -66,7 +66,15 @@ export class UserComponent implements OnInit {
   onSubmit() {
     this.det = this.form.value;
     console.log(this.det.name, " parent comp ts");
-    this.githubService.users(this.det.name).subscribe(projects => this.projects = projects);
+    this.githubService.users(this.det.name).subscribe(
+      (projects) => this.projects = projects,
+      (error) =>
+      { if (error.status=='404') 
+        {
+          alert('User not found');
+        }      
+      }
+      );
   }
 
 }

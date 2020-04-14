@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TruncatePipe } from './truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     OrganizationComponent,
     UserComponent,
     RepositoryComponent,
-    DashboardComponent
+    DashboardComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
