@@ -1,23 +1,31 @@
-<div class="card" [ngStyle]="{'background-color':project.fork? 'yellow' : 'white' }">
-  <h1>Project Name:
+<div class="card text-center" style="width: 55rem; margin-left: 20rem;" [ngStyle]="{'background-color':project.fork? 'yellow' : 'white' }">
+
+  <h1 class="card-header">
     <a href="{{project.html_url}}" target="_blank">{{project.name}}</a>
   </h1>
-  <h2>Size:
-    {{project.size}}
-  </h2>
-  <h2>Language:
-    {{project.language}}
-  </h2>
-  <h2>Description:
-    {{project.description | truncate:[50]}}
-  </h2>
-  <p>
-    stargazers_count:{{project.stargazers_count}}
-  </p>
-  <p>
-    watchers_count:{{project.watchers_count}}
-  </p>
-  <p>
-    forks_count:{{project.forks_count}}
-  </p>
+  
+  <div class="card-body">
+    <h5 class="text-muted text-right">size:
+      {{project.size}}
+    </h5>
+    <h2>Language:
+      {{project.language}}
+    </h2>
+    <h4>
+      Description:
+      {{project.description | truncate:[50]}}
+    </h4>
+    <p>
+     <span class="text-left">
+        stargazers_count:{{project.stargazers_count}}
+     </span> 
+     <span class="text-center">
+        watchers_count:{{project.watchers_count}}
+     </span>
+     <span class="text-right">
+        forks_count:{{project.forks_count}}
+     </span>
+    </p>
+  </div>
+
 </div>

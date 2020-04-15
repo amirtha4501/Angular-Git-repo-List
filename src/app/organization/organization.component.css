@@ -1,0 +1,11 @@
+input {
+    width: 15rem;
+    margin-top: 35px;
+    margin-left: 36rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+button {
+    margin-left: 10px;
+}

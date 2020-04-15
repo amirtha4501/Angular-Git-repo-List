@@ -1,9 +1,10 @@
 <form novalidate [formGroup]="form" (ngSubmit)="onSubmit()">
-    <input formControlName="name" cols="30" rows="10" placeholder="username" required>
-    <button type="submit" [disabled]="form.invalid">Submit</button>
+    <div class="form-group">
+        <input formControlName="name" cols="30" rows="10" placeholder="username" required>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+    </div>
 </form>
 
 <div>
-    Child Component
     <app-repository [project]="project" *ngFor="let project of projects"></app-repository>
 </div>
