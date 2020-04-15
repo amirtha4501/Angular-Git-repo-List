@@ -10,7 +10,7 @@ import { GithubService } from '../github.service';
 export class UserComponent implements OnInit {
 
   form: FormGroup;
-  det: object;
+  det: any;
   projects: []
 
   formErrors = {

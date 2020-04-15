@@ -10,7 +10,7 @@ import { GithubService } from '../github.service';
 export class OrganizationComponent implements OnInit {
 
   orgform: FormGroup;
-  det: object;
+  det: any;
   projects: [];
 
   formErrors = {
