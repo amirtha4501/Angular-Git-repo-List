@@ -1,6 +1,6 @@
 <form novalidate [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-group">
-        <input formControlName="name" cols="30" rows="10" placeholder="username" required>
+        <input formControlName="name" placeholder="username" required>
         <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
     </div>
 </form>
