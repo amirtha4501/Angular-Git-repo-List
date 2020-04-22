@@ -1,2 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+input {
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 3px;
+    padding-left: 15px;
+    border-color: cornflowerblue;
+    margin-top: 10px;
+}
+
+input:focus {
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 0px;
+    border-color: deepskyblue;
+}
+
+.repobtn {
+    margin-left: 10px;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.homebutton {
+    border-radius: 40px;
+    float: right;
+}
+
+.container-fluid {
+    overflow: auto;
+    margin: auto;
+    position: relative;
+    padding: 2%;
+}   
+
+app-repository {
+    background-color: blue;
+    margin-left: 50%;
+}

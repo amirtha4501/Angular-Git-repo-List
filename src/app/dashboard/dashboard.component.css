@@ -1,10 +1,7 @@
-div {
-    width: 50rem;
-    margin-top: 12rem;
-    margin-left: 23rem;
-    padding: 50px;
-}
-
-a {
-    margin: 1em;
-}
+.container {
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}   
